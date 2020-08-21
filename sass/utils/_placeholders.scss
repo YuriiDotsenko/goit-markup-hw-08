@@ -1,0 +1,42 @@
+%btn-main-configuration {
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $title-dark-theme-color;
+}
+
+%logo-style {
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+%link-info-configuration {
+  padding: 0;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+%footer-info-adres-configuration {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-dark-theme-color;
+}
