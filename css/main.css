@@ -615,11 +615,7 @@ p {
 
 .heder .conteiner {
   display: flex;
-}
-
-.heder-container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .logo-decorait {
@@ -639,12 +635,126 @@ p {
   color: #212121;
 }
 
-.menu-button {
-  background-color: transparent;
-  border: none;
+.link-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*navigation*/
+.link-item:hover, .link-item:focus {
+  color: #2196f3;
+}
+
+.info-kontakt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.info-kontakt {
+  fill: #757575;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-kontakt:hover, .info-kontakt:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .heder {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .heder-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-close {
+    display: none;
+  }
+  .menu-button {
+    background-color: transparent;
+    border: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .menu-button.is-open .icon-burger {
+    display: none;
+  }
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .menu-wrapper.is-open {
+    display: block;
+  }
+  /*navigation*/
+  .link {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .studio {
+    padding-bottom: 52px;
+  }
+  .portfolio {
+    padding-bottom: 40px;
+  }
+  .current-effect {
+    color: #2196f3;
+  }
+  .current-effect::after {
+    content: "";
+    position: absolute;
+    left: 44%;
+    top: -10px;
+    width: 61px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    transform: translateY(32px);
+  }
+  .general {
+    position: relative;
+  }
+  .info {
+    padding: 0;
+    margin: 0;
+  }
+  .info-menu {
+    margin-top: 60px;
+  }
+  .info-item:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .menu-button {
+    display: none;
+  }
+  .logo-decorait {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    text-decoration: none;
+  }
+}
+
 /*hero*/
 .overlay {
   max-width: 1600px;
