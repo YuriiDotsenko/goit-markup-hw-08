@@ -5,6 +5,7 @@
   .conteiner {
     display: flex;
     position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -160,7 +161,7 @@
   }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -168,6 +169,75 @@
   .logo-decorait {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+
+  .link {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 81px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .menu-wrapper {
+    display: flex;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .link-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-light-theme-color;
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .current-effect {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 30%;
+      top: 56%;
+      width: 61px;
+      height: 4px;
+      background: $accent-color;
+      border-radius: 2px;
+      transform: translateY(32px);
+    }
+  }
+
+  .general:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .info-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .info-kontakt {
+    display: flex;
+  }
+
+  .info {
+    margin: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
