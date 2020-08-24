@@ -366,6 +366,7 @@ p {
 }
 
 .conteiner {
+  margin: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -435,7 +436,6 @@ p {
 .heder .conteiner {
   display: flex;
   position: relative;
-  margin: 0 auto;
 }
 
 .logo-decorait {
@@ -558,9 +558,11 @@ p {
   }
   .info-menu {
     margin-top: 60px;
+    margin-bottom: 10px;
   }
   .info-item:not(:last-child) {
     padding-bottom: 16px;
+    margin-right: 30px;
   }
 }
 
@@ -616,10 +618,6 @@ p {
     margin-right: 10px;
     vertical-align: middle;
   }
-  .info-item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 10px;
-  }
   .info-kontakt {
     display: flex;
   }
@@ -627,6 +625,64 @@ p {
     margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .heder {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-decorait {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  /*navigation*/
+  .navigation {
+    display: flex;
+  }
+  .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+  }
+  .current-effect::after {
+    content: "";
+    position: absolute;
+    left: 19%;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    transform: translateY(32px);
+  }
+  .icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .info-kontakt {
+    fill: #757575;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .info-kontakt:hover, .info-kontakt:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .info {
+    padding-left: 305px;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .info-item {
+    margin-bottom: 0;
+  }
+  .info-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
