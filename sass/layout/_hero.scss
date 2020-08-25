@@ -1,7 +1,8 @@
 /*hero*/
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .overlay {
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -17,9 +18,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero {
-    max-width: 768px;
+    min-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),

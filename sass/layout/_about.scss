@@ -1,62 +1,70 @@
 /*our advantages*/
 
-.item {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.primery {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 94px;
-  justify-content: center;
-}
-
-.primery-item {
-  width: 70px;
-  height: 70px;
-}
-
-.primery-svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  width: 100%;
-  height: 120px;
-}
-
-.size {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .primery {
+    display: block;
   }
 }
 
-.primary-margin:not(:last-child) {
-  margin-right: 30px;
-}
+// @media screen and (min-width: 1200px) {
+//   .item {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
 
-.main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-light-theme-color;
-  margin-bottom: 50px;
-}
+//   .primery {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     padding-top: 94px;
+//     justify-content: center;
+//   }
 
-.title {
-  display: flex;
-  margin-top: 55px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $title-light-theme-color;
-}
+//   .primery-item {
+//     width: 70px;
+//     height: 70px;
+//   }
+
+//   .primery-svg {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #f5f4fa;
+//     width: 100%;
+//     height: 120px;
+//   }
+
+//   .size {
+//     width: 270px;
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   .primary-margin:not(:last-child) {
+//     margin-right: 30px;
+//   }
+
+//   .main-title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $title-light-theme-color;
+//     margin-bottom: 50px;
+//   }
+
+//   .title {
+//     display: flex;
+//     margin-top: 55px;
+//     margin-bottom: 10px;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $title-light-theme-color;
+//   }
+// }

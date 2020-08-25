@@ -515,6 +515,7 @@ p {
     display: none;
     position: absolute;
     text-align: center;
+    background-color: #ffffff;
     top: 100%;
     right: 0;
     width: 100%;
