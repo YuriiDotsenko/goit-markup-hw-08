@@ -41,13 +41,20 @@
   padding: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .conteiner {
     display: block;
   }
 
   .primery-svg {
     text-align: center;
+  }
+
+  .primery {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    justify-content: center;
   }
 
   .title {
@@ -68,6 +75,16 @@
   .first-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .primery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .size {
+    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
