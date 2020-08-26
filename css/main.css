@@ -366,19 +366,18 @@ p {
 }
 
 .conteiner {
-  margin: 0;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .conteiner {
     width: 480;
-    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .conteiner {
     width: 768px;
   }
@@ -574,7 +573,7 @@ p {
   border-radius: 4px;
 }
 
-.button-modal, .button, .button-footer {
+.button-modal, .button-footer {
   border-radius: 4px;
   min-width: 200px;
   text-align: center;
@@ -671,7 +670,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .heder {
-    max-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
   .heder-container {
@@ -696,6 +695,7 @@ p {
     display: none;
     position: absolute;
     text-align: center;
+    background-color: #ffffff;
     top: 100%;
     right: 0;
     width: 100%;
@@ -809,13 +809,6 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .heder {
-    min-width: 768px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo-decorait {
     padding-top: 24px;
@@ -868,22 +861,30 @@ p {
 }
 
 /*hero*/
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Header.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  outline: 1px solid black;
-}
-
 .hero {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-title {
@@ -899,13 +900,53 @@ p {
   margin-bottom: 30px;
 }
 
-.button {
-  border: none;
-  margin-bottom: 200px;
-  margin-top: 30px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .overlay {
+    width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Header-img-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    outline: 1px solid black;
+  }
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Header-img-tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Header.jpg);
+  }
+  .hero-title {
+    padding: 0;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 200px;
+    margin-bottom: 30px;
+  }
+  .button {
+    margin-bottom: 200px;
+  }
 }
 
 /*MADAL*/
@@ -1090,65 +1131,10 @@ p {
 }
 
 /*our advantages*/
-.item {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.primery {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 94px;
-  justify-content: center;
-}
-
-.primery-item {
-  width: 70px;
-  height: 70px;
-}
-
-.primery-svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  width: 100%;
-  height: 120px;
-}
-
-.size {
-  width: 270px;
-}
-
-.size:not(:last-child) {
-  margin-right: 30px;
-}
-
-.primary-margin:not(:last-child) {
-  margin-right: 30px;
-}
-
-.main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
-.title {
-  display: flex;
-  margin-top: 55px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .conteiner {
+    display: block;
+  }
 }
 
 /*WORKING*/

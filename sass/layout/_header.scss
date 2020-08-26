@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 767px) {
   .heder {
-    max-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
 
@@ -236,13 +236,6 @@
     margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .heder {
-    min-width: 768px;
-    margin: 0 auto;
   }
 }
 
