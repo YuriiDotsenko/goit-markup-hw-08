@@ -84,7 +84,14 @@
 
   .size {
     width: 354px;
-    flex-basis: calc((100% - 30px) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
   }
 }
 

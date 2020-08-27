@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-.svg-clients:not(:last-child) {
-  margin-right: 30px;
-}
-
 .imeges {
   display: flex;
   width: 170px;
@@ -26,5 +22,50 @@
   &:focus {
     border: 1px solid $accent-color;
     fill: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .piple {
+    flex-wrap: wrap;
+  }
+
+  .svg-clients {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  .imeges {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .piple {
+    flex-wrap: wrap;
+  }
+
+  .imeges {
+    width: 226px;
+  }
+  .svg-clients {
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svg-clients:not(:last-child) {
+    margin-right: 30px;
   }
 }

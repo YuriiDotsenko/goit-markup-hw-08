@@ -1,19 +1,5 @@
 /*footer*/
 
-.footer-nav {
-  margin-right: 69px;
-}
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-  .conteiner {
-    display: flex;
-    align-items: baseline;
-  }
-}
-
 .logo-footer {
   font-weight: 700;
   font-size: 26px;
@@ -24,26 +10,17 @@
 }
 
 .footer-adres {
-  @extend %footer-info-adres-configuration;
+  // @extend %footer-info-adres-configuration;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-dark-theme-color;
   text-decoration: none;
   color: $title-dark-theme-color;
   padding-top: 9px;
-}
-
-.footer-info {
-  @extend %footer-info-adres-configuration;
-  margin-top: 20px;
-}
-
-.socsiec {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  display: flex;
-}
-
-.soc-list:not(:last-child) {
-  margin-right: 10px;
 }
 
 .soc-title {
@@ -63,10 +40,6 @@
   }
 }
 
-.footer-action {
-  margin-right: 155px;
-}
-
 .action,
 .action-class {
   font-weight: 700;
@@ -78,7 +51,20 @@
 }
 
 .button-footer {
-  @extend %btn-main-configuration;
+  // @extend %btn-main-configuration;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $title-dark-theme-color;
 }
 
 .input {
@@ -94,7 +80,6 @@
 
 .footer-form {
   display: flex;
-
   margin-top: 20px;
 }
 
@@ -107,4 +92,81 @@
 
 .button-twit {
   margin-left: 10px;
+}
+
+.footer-info {
+  // @extend %footer-info-adres-configuration;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-dark-theme-color;
+  margin-top: 20px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  .conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.socsiec {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+}
+.soc-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-nav {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .footer-action {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .footer .conteiner {
+    display: block;
+  }
+
+  .socsiec {
+    justify-content: center;
+  }
+
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+
+  .action-class {
+    display: flex;
+    text-align: center;
+  }
+
+  .button-footer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    margin-right: 69px;
+  }
+
+  .footer-action {
+    margin-right: 155px;
+  }
 }
