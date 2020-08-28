@@ -918,7 +918,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .menu {
-    margin-right: 15px;
+    margin-left: 15px;
     width: 480px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1024,6 +1024,33 @@ p {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-decoration .photo-port {
+    width: 450px;
+  }
+  .editing {
+    margin: 0;
+    width: 100%;
+  }
+  .editing:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .editing {
+    margin: 0;
+    width: 354px;
+    height: 404px;
+  }
+  .editing:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .editing:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 
 /*footer*/
