@@ -110,6 +110,7 @@
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    z-index: 100;
 
     &.is-open {
       display: block;
@@ -137,9 +138,9 @@
     &::after {
       content: "";
       position: absolute;
-      left: 44%;
+      left: 42%;
       top: -10px;
-      width: 61px;
+      width: 76px;
       height: 4px;
       background: $accent-color;
       border-radius: 2px;

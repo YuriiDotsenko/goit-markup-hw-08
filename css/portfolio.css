@@ -392,6 +392,226 @@ p {
   }
 }
 
+/*MADAL*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 103;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-form-title {
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover {
+  fill: #2196f3;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.close-button-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.form {
+  position: fixed;
+  max-width: 528px;
+  height: 581px;
+  padding: 40px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 40px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.form-input:focus ~ .icon-hero {
+  fill: #2196f3;
+}
+
+.icon-hero {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: #2196f3;
+  transform: translateY(-40px);
+  left: 22px;
+}
+
+.form-messege {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form-messege:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox-icon {
+  position: absolute;
+  display: flex;
+  left: 50px;
+  bottom: 125px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label {
+  display: inline-block;
+}
+
+.form-condition-modal {
+  position: absolute;
+  left: 85px;
+  bottom: 125px;
+}
+
+.conditions {
+  color: #2196f3;
+}
+
+.button-modal {
+  position: absolute;
+  left: 160px;
+  bottom: 40px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    width: 450px;
+    left: 49%;
+  }
+  .form-messege {
+    width: 370px;
+  }
+  .checkbox-icon {
+    left: 45px;
+    bottom: 105px;
+  }
+  .form-condition-modal {
+    position: absolute;
+    left: 85px;
+    bottom: 105px;
+    font-size: 12px;
+  }
+  .button-modal {
+    left: 135px;
+  }
+}
+
+.button-modal {
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
 .logo, .logo .logo-studio {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -461,6 +681,10 @@ p {
   fill: #2196f3;
 }
 
+.logo-studio {
+  color: black;
+}
+
 @media screen and (max-width: 767px) {
   .heder {
     width: 480px;
@@ -494,6 +718,7 @@ p {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    z-index: 100;
   }
   .menu-wrapper.is-open {
     display: block;
@@ -515,9 +740,9 @@ p {
   .current-effect::after {
     content: "";
     position: absolute;
-    left: 44%;
+    left: 42%;
     top: -10px;
-    width: 61px;
+    width: 76px;
     height: 4px;
     background: #2196f3;
     border-radius: 2px;
@@ -600,6 +825,9 @@ p {
     padding-top: 21px;
     padding-bottom: 21px;
   }
+  .info-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -653,7 +881,6 @@ p {
   }
 }
 
-/*portfolio*/
 /*menu*/
 .button-list {
   padding: 0;
@@ -689,6 +916,16 @@ p {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-right: 15px;
+    width: 480px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/*portfolio*/
 /*main content*/
 .main-unit {
   display: flex;
@@ -806,9 +1043,8 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  color: #ffffff;
   padding-top: 9px;
 }
 
@@ -936,10 +1172,52 @@ p {
   }
   .action-class {
     display: flex;
-    text-align: center;
+    justify-content: center;
   }
   .button-footer {
     display: block;
+    margin: 0 auto;
+  }
+  .input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+  .forma {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer-action {
+    justify-content: flex-end;
+  }
+  .footer .conteiner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-action {
+    text-align: center;
+  }
+  .action-class {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  .button-footer {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -948,7 +1226,7 @@ p {
     margin-right: 69px;
   }
   .footer-action {
-    margin-right: 155px;
+    margin-right: 94px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -16,43 +16,63 @@
     <!-- Шапка -->
 
     <header class="heder">
-      <div class="conteiner">
-        <nav class="navigation">
-          <a href="./index.html" aria-label="Логотип" class="logo-decorait">
-            <span class="logo">Web</span><span class="logo-studio">Studio</span>
-          </a>
+      <div class="conteiner heder-container">
+        <a href="./index.html" aria-label="Логотип" class="logo-decorait">
+          <span class="logo">Web</span><span class="logo-studio">Studio</span>
+        </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="navigation"
+          data-menu-button
+        >
+          <svg width="40px" height="40px">
+            <use class="icon-burger" href="./img/sprite.svg#menu-burger"></use>
+            <use class="icon-close" href="./img/sprite.svg#close-burger"></use>
+          </svg>
+        </button>
 
-          <ul class="link">
-            <li class="general">
-              <a href="./index.html" class="link-item">Студия</a>
-            </li>
-            <li class="general">
-              <a href="./portfolio.html" class="link-item current-effect"
-                >Портфолио</a
-              >
-            </li>
-            <li class="general"><a href="" class="link-item">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
+            <ul class="link">
+              <li class="general studio">
+                <a href="./index.html" class="link-item">Студия</a>
+              </li>
+              <li class="general portfolio">
+                <a href="./portfolio.html" class="link-item current-effect"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="general"><a href="" class="link-item">Контакты</a></li>
+            </ul>
+          </nav>
 
-        <ul class="info">
-          <li class="info-item">
-            <a href="mailto:info@devstudio.com" class="info-kontakt" lang="en">
-              <svg class="icon" width="16px" height="11px">
-                <use href="./img/sprite.svg#mail-logo"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="info-item">
-            <a href="tel:+380961111111" class="info-kontakt">
-              <svg class="icon" width="10px" height="15px">
-                <use href="./img/sprite.svg#tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <div class="info-menu">
+            <ul class="info">
+              <li class="info-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="info-kontakt"
+                  lang="en"
+                >
+                  <svg class="icon" width="16px" height="11px">
+                    <use href="./img/sprite.svg#mail-logo"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="info-item">
+                <a href="tel:+380961111111" class="info-kontakt">
+                  <svg class="icon" width="10px" height="15px">
+                    <use href="./img/sprite.svg#tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -356,5 +376,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

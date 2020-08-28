@@ -573,6 +573,29 @@ p {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .form {
+    width: 450px;
+    left: 49%;
+  }
+  .form-messege {
+    width: 370px;
+  }
+  .checkbox-icon {
+    left: 45px;
+    bottom: 105px;
+  }
+  .form-condition-modal {
+    position: absolute;
+    left: 85px;
+    bottom: 105px;
+    font-size: 12px;
+  }
+  .button-modal {
+    left: 135px;
+  }
+}
+
 .button-modal {
   border-radius: 4px;
   min-width: 200px;
@@ -656,6 +679,10 @@ p {
 .info-kontakt:hover, .info-kontakt:focus {
   color: #2196f3;
   fill: #2196f3;
+}
+
+.logo-studio {
+  color: black;
 }
 
 @media screen and (max-width: 767px) {
@@ -796,6 +823,9 @@ p {
     margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+  .info-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1118,6 +1148,29 @@ p {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    width: 450px;
+    left: 49%;
+  }
+  .form-messege {
+    width: 370px;
+  }
+  .checkbox-icon {
+    left: 45px;
+    bottom: 105px;
+  }
+  .form-condition-modal {
+    position: absolute;
+    left: 85px;
+    bottom: 105px;
+    font-size: 12px;
+  }
+  .button-modal {
+    left: 135px;
+  }
 }
 
 /*our advantages*/
@@ -1471,9 +1524,8 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  color: #ffffff;
   padding-top: 9px;
 }
 
@@ -1601,10 +1653,52 @@ p {
   }
   .action-class {
     display: flex;
-    text-align: center;
+    justify-content: center;
   }
   .button-footer {
     display: block;
+    margin: 0 auto;
+  }
+  .input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+  .forma {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer-action {
+    justify-content: flex-end;
+  }
+  .footer .conteiner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-action {
+    text-align: center;
+  }
+  .action-class {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  .button-footer {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -1613,7 +1707,7 @@ p {
     margin-right: 69px;
   }
   .footer-action {
-    margin-right: 155px;
+    margin-right: 94px;
   }
 }
 /*# sourceMappingURL=main.css.map */

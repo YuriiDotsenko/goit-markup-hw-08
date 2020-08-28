@@ -3,8 +3,10 @@
 @import "./base/base";
 
 @import "./components/conteiner";
+@import "./components/modal";
 @import "./utils/placeholders";
 
-@import "./layout/header";
-@import "./layout/portfolio";
-@import "./layout/footer";
+@import "./layout-portfolio/header-portfolio";
+@import "./layout-portfolio/button-menu";
+@import "./layout-portfolio/portfolio";
+@import "./layout-portfolio/footer";
