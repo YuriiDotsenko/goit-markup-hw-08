@@ -1633,6 +1633,9 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    width: 480px;
+  }
   .footer-nav {
     text-align: center;
     margin: 0 auto;
