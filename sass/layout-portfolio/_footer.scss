@@ -125,6 +125,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    width: 480px;
+    margin: 0 auto;
+  }
+
   .footer-nav {
     text-align: center;
     margin: 0 auto;
