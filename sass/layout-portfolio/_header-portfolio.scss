@@ -214,9 +214,9 @@
     &::after {
       content: "";
       position: absolute;
-      left: 30%;
+      left: 44%;
       top: 56%;
-      width: 61px;
+      width: 75px;
       height: 4px;
       background: $accent-color;
       border-radius: 2px;
@@ -269,9 +269,9 @@
   .current-effect::after {
     content: "";
     position: absolute;
-    left: 19%;
+    left: 28%;
     bottom: 0;
-    width: 60px;
+    width: 72px;
     height: 4px;
     background: $accent-color;
     border-radius: 2px;

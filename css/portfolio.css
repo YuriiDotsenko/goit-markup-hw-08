@@ -802,9 +802,9 @@ p {
   .current-effect::after {
     content: "";
     position: absolute;
-    left: 30%;
+    left: 44%;
     top: 56%;
-    width: 61px;
+    width: 75px;
     height: 4px;
     background: #2196f3;
     border-radius: 2px;
@@ -847,9 +847,9 @@ p {
   .current-effect::after {
     content: "";
     position: absolute;
-    left: 19%;
+    left: 28%;
     bottom: 0;
-    width: 60px;
+    width: 72px;
     height: 4px;
     background: #2196f3;
     border-radius: 2px;
@@ -909,10 +909,9 @@ p {
 }
 
 .menu {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 93px;
-  margin-bottom: 50px;
   padding: 0;
 }
 
@@ -922,6 +921,23 @@ p {
     width: 480px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding-top: 93px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1029,6 +1045,7 @@ p {
 @media screen and (max-width: 767px) {
   .logo-decoration .photo-port {
     width: 450px;
+    margin: 0 auto;
   }
   .editing {
     margin: 0;
@@ -1036,6 +1053,10 @@ p {
   }
   .editing:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .main-unit {
+    width: 480px;
+    margin: 0 auto;
   }
 }
 
