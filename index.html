@@ -161,7 +161,7 @@
           <h2 class="main-title">Чем мы занимаемся</h2>
           <ul class="employment">
             <li class="size-two">
-              <img
+              <img srcset="./img/img.jpg 1x, ./img/img@2x.jpg 2x"
                 class="what-we-do-image"
                 src="./img/img.jpg"
                 alt="Десктопные приложения"
@@ -172,7 +172,7 @@
             </li>
 
             <li class="size-two">
-              <img
+              <img srcset="./img/box.jpg 1x, ./img/box@2x.jpg 2x"
                 class="what-we-do-image"
                 src="./img/box.jpg"
                 alt="Мобильные приложения"
@@ -183,7 +183,7 @@
             </li>
 
             <li class="size-two">
-              <img
+              <img srcset="./img/desktop.jpg 1x, ./img/desktop@2x.jpg 2x"
                 class="what-we-do-image"
                 src="./img/desktop.jpg"
                 alt="Дизайнерские решения"
@@ -203,11 +203,16 @@
           <h2 class="main-title">Наша команда</h2>
           <ul class="team-list">
             <li class="size-two comand">
-              <img
+              <picture>
+                <source srcset="./img/nikolaj.jpg 1x, ./img/nikolaj-mob@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./img/nikolaj.jpg 1x, ./img/nikolaj-tab@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                <source srcset="./img/nikolaj.jpg 1x, ./img/nikolaj-komp@2x.jpg 2x" media="(min-width: 1200px)">
+              <img 
                 class="photo"
                 src="./img/nikolaj.jpg"
                 alt="Фото Николая Кучеренко"
               />
+              </picture>
               <h3 class="employees">Николай Кучеренко</h3>
               <p lang="en" class="employees-position">Product Designer</p>
               <ul class="group">
@@ -243,11 +248,16 @@
             </li>
 
             <li class="size-two comand">
-              <img
+              <picture>
+                <source srcset="./img/olga.jpg 1x, ./img/olga-mob@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./img/olga.jpg 1x, ./img/olga-tab@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                <source srcset="./img/olga.jpg 1x, ./img/olga-komp@2x.jpg 2x" media="(min-width: 1200px)">
+              <img 
                 class="photo"
                 src="./img/olga.jpg"
                 alt="Фото Ольги Ивановой"
               />
+              </picture>
               <h3 class="employees">Ольга Иванова</h3>
               <p lang="en" class="employees-position">Frontend Developer</p>
               <ul class="group">
@@ -283,11 +293,16 @@
             </li>
 
             <li class="size-two comand">
-              <img
+              <picture>
+                <source srcset="./img/andrej.jpg 1x, ./img/andrej-mob@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./img/andrej.jpg 1x, ./img/andrej-tab@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                <source srcset="./img/andrej.jpg 1x, ./img/andrej-komp@2x.jpg 2x" media="(min-width: 1200px)">
+              <img 
                 class="photo"
                 src="./img/andrej.jpg"
                 alt="Фото Андрея Шевченко"
               />
+              </picture>
               <h3 class="employees">Андрей Шевченко</h3>
               <p lang="en" class="employees-position">Marketing</p>
               <ul class="group">
@@ -323,11 +338,16 @@
             </li>
 
             <li class="size-two comand">
-              <img
+              <picture>
+                <source srcset="./img/ivan.jpg 1x, ./img/ivan-mob@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./img/ivan.jpg 1x, ./img/ivan-tab@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                <source srcset="./img/ivan.jpg 1x, ./img/ivan-komp@2x.jpg 2x" media="(min-width: 1200px)">
+              <img 
                 class="photo"
                 src="./img/ivan.jpg"
                 alt="Фото Ивана Николаева"
               />
+              </picture>
               <h3 class="employees">Иван Николаев</h3>
               <p lang="en" class="employees-position">UI Designer</p>
               <ul class="group">
