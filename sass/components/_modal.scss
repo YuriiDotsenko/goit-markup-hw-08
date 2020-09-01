@@ -11,6 +11,29 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-btn {
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $title-dark-theme-color;
+  position: absolute;
+  left: 160px;
+  bottom: 40px;
+  border: none;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .main-form-title {
   margin-bottom: 30px;
   font-family: Roboto;
@@ -176,17 +199,6 @@
   color: $accent-color;
 }
 
-.button-modal {
-  @extend %btn-main-configuration;
-  position: absolute;
-  left: 160px;
-  bottom: 40px;
-  border: none;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 @media screen and (max-width: 767px) {
   .form {
     width: 450px;
@@ -209,7 +221,7 @@
     font-size: 12px;
   }
 
-  .button-modal {
+  .modal-btn {
     left: 135px;
   }
 }
