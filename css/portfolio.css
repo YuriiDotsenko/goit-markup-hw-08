@@ -628,6 +628,11 @@ p {
   position: relative;
 }
 
+.link-item-current {
+  color: #2196f3;
+  text-decoration: none;
+}
+
 .logo-decorait {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -731,10 +736,10 @@ p {
   .portfolio {
     padding-bottom: 40px;
   }
-  .current-effect {
+  .active-page {
     color: #2196f3;
   }
-  .current-effect::after {
+  .active-page::after {
     content: "";
     position: absolute;
     left: 42%;
@@ -796,7 +801,7 @@ p {
   .link-item:hover, .link-item:focus {
     color: #2196f3;
   }
-  .current-effect::after {
+  .active-page::after {
     content: "";
     position: absolute;
     left: 44%;
@@ -841,7 +846,7 @@ p {
     padding-bottom: 32px;
     display: flex;
   }
-  .current-effect::after {
+  .active-page::after {
     content: "";
     position: absolute;
     left: 28%;

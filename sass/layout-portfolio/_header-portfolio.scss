@@ -8,6 +8,11 @@
   }
 }
 
+.link-item-current {
+  color: #2196f3;
+  text-decoration: none;
+}
+
 .logo-decorait {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -132,7 +137,7 @@
     padding-bottom: 40px;
   }
 
-  .current-effect {
+  .active-page {
     color: $accent-color;
 
     &::after {
@@ -210,7 +215,7 @@
     }
   }
 
-  .current-effect {
+  .active-page {
     &::after {
       content: "";
       position: absolute;
@@ -266,7 +271,7 @@
     display: flex;
   }
 
-  .current-effect::after {
+  .active-page::after {
     content: "";
     position: absolute;
     left: 28%;
